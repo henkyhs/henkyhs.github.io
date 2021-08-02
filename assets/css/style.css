@@ -1,0 +1,330 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.bg-jau {
+  background-color: #80ced6;
+}
+.navbar-brand img {
+  width: 50px;
+  height: 59px;
+}
+.navbar {
+  transition: all 500ms ease-in-out;
+}
+
+.navbar > div {
+  transition: all 1000ms ease-in-out;
+}
+
+.jumbotron {
+  padding: 5rem 1rem;
+  background-image: url("../../assets/img/3.jpg");
+  background-size: cover;
+  height: 640px;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.jumbotron::after /*untuk gradasi background*/ {
+  content: " ";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to top, rgba(235, 237, 240, 0.027), #80ced6);
+  position: absolute;
+  bottom: 0;
+}
+.jumbotron h1 {
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.display-4 {
+  color: white;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  z-index: 1;
+  padding: 25px 20px;
+  border: 2px solid white;
+}
+.container h2 {
+  color: rgb(7, 7, 85);
+  padding: 10px 0px;
+  border-bottom: 2px solid darkblue;
+  margin-bottom: 30px;
+}
+.figure img {
+  width: 600px;
+  height: 315px;
+}
+section {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+section h3 {
+  padding: 20px 0px;
+}
+.tentang p {
+  font-weight: bold;
+}
+footer {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+  height: 70px;
+  margin-top: auto;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  max-height: min-content;
+}
+.footer a {
+  margin-bottom: 100px;
+}
+.content {
+  padding: 5rem 1rem;
+}
+span {
+  color: lightskyblue;
+}
+.pict img {
+  width: 100%;
+  height: 400px;
+}
+/* Float icon */
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #f33;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1000;
+  animation: bot-to-top 2s ease-out;
+}
+
+.float-icon ul {
+  position: fixed;
+  right: 40px;
+  padding-bottom: 20px;
+  bottom: 80px;
+  z-index: 100;
+}
+
+.float-icon ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.float-facebook {
+  background-color: blue;
+}
+.float-wa {
+  background-color: green;
+}
+.float-ig {
+  background-color: #ff00ff;
+}
+.float-email {
+  background-color: red;
+}
+.float-icon ul li a {
+  /* background-color: #f33; */
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.float-icon ul:hover {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.my-float {
+  font-size: 30px;
+  margin-top: 18px;
+  vertical-align: middle;
+}
+
+.float-icon a#menu-share + ul {
+  visibility: hidden;
+}
+
+.float-icon a#menu-share:hover + ul {
+  visibility: visible;
+  animation: scale-in 0.5s;
+}
+
+.float-icon a#menu-share i {
+  animation: rotate-in 0.5s;
+}
+
+.float-icon a#menu-share:hover > i {
+  animation: rotate-out 0.5s;
+}
+
+@keyframes bot-to-top {
+  0% {
+    bottom: -40px;
+  }
+  50% {
+    bottom: 40px;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-in {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-out {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* End of Float Icon */
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 300;
+}
+.bg-black {
+  background-color: #000 !important;
+}
+/* Services Index */
+.projects-section {
+  padding: 10rem 0;
+}
+.projects-section .featured-text {
+  padding: 2rem;
+}
+.projects-section a {
+  padding-top: 10px;
+}
+
+/* Galeri Index */
+.galeri-contain {
+  position: relative;
+  width: 50%;
+}
+.image {
+  display: block;
+  width: 200px;
+  height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 200px;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+}
+
+.galeri-contain:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .nav-link:hover::after /*untuk memberi garis biru di menu navbar */ {
+    content: "";
+    display: block;
+    border-bottom: 3px solid rgb(240, 241, 243);
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .btn {
+    border-radius: 0;
+    border-width: 2px;
+    padding: 10px 30px;
+    border-image-slice: 1;
+    background-image: none;
+    background: transparent;
+    border-image-source: var(--gradient);
+    box-shadow: 5px 5px 0px 0px var(--secondary);
+  }
+  .btn :hover {
+    color: white;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 10px 30px;
+    transform: translate(5px, 5px);
+  }
+}
+@media (max-width: 768px) {
+  footer {
+    justify-content: center;
+  }
+  footer button {
+    display: none;
+  }
+  .berita h1,
+  p {
+    text-align: center;
+  }
+  .project-text p {
+    padding-bottom: 20px;
+  }
+  .project-text a {
+    margin-bottom: 20px;
+  }
+}
